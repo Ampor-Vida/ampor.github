@@ -1,2 +1,2 @@
-# ampor.github
+# ampor.github.io
 GitHub
