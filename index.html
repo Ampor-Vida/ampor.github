@@ -3,51 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+    <title>Welcome to My Professional GitHub Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+        /* General Styling */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
         header {
             background-color: #4a90e2;
-            padding: 10px 0;
             color: #fff;
             text-align: center;
+            padding: 60px 0;
         }
         header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #357abd;
-        }
-        nav a {
-            padding: 15px 20px;
-            color: #fff;
-            text-decoration: none;
+            font-size: 2.5em;
             font-weight: bold;
         }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        nav a {
+            color: #f4f4f9;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
         nav a:hover {
-            background-color: #2a5a89;
+            color: #4a90e2;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
-            text-align: center;
+            margin: auto;
+            padding: 20px 0;
         }
         .section {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #e9f0f8;
+            margin: 60px 0;
+            padding: 40px;
             border-radius: 8px;
+            background-color: #e9f0f8;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
-        .section h2 {
+        .section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
             color: #4a90e2;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        a.button:hover {
+            background-color: #357abd;
         }
         .contact-info a {
             color: #4a90e2;
@@ -57,42 +92,58 @@
         .contact-info a:hover {
             color: #2a5a89;
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f4f4f9;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Page</h1>
-    </header>
+    <!-- Navigation Bar -->
     <nav>
+        <a href="#intro">Home</a>
         <a href="#repositories">Repositories</a>
         <a href="#contact">Contact Info</a>
         <a href="#about">About Me</a>
     </nav>
 
+    <!-- Header -->
+    <header id="intro">
+        <h1>Welcome to My Professional GitHub Page</h1>
+        <p>Explore my projects, learn about my journey, and feel free to connect!</p>
+    </header>
+
     <div class="container">
         <!-- Repositories Section -->
-        <div id="repositories" class="section">
+        <section id="repositories" class="section">
             <h2>My Repositories</h2>
-            <p>Here’s a list of my GitHub repositories where I showcase my projects and contributions.</p>
+            <p>Discover a collection of my GitHub repositories where I showcase projects in web development, data analysis, and software engineering.</p>
             <a href="https://github.com/username" class="button" target="_blank">Explore My Repos</a>
-        </div>
+        </section>
 
         <!-- Contact Information Section -->
-        <div id="contact" class="section">
+        <section id="contact" class="section">
             <h2>Contact Information</h2>
-            <p>Feel free to reach out to me through LinkedIn or email:</p>
+            <p>Feel free to reach out to me for collaborations or inquiries:</p>
             <p class="contact-info">
                 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br>
                 <strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a>
             </p>
-        </div>
+        </section>
 
         <!-- About Me Section -->
-        <div id="about" class="section">
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I am a passionate developer with expertise in web development, data analysis, and software engineering. I enjoy creating solutions that make a difference and love collaborating on open-source projects.</p>
-            <p>On this page, you’ll find links to my projects, contact information, and a bit about my journey in the tech world. Thanks for visiting!</p>
-        </div>
+            <p>I am a dedicated and passionate developer with expertise in multiple areas of software development. From creating impactful web applications to analyzing complex data, my goal is to develop solutions that make a difference. I enjoy collaborating on open-source projects and always aim to learn and grow with each project.</p>
+            <p>Feel free to explore my work and connect with me if you're interested in discussing any opportunities!</p>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My GitHub Page | Made with ❤️ and HTML</p>
+    </footer>
 </body>
 </html>
