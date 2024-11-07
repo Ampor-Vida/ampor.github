@@ -12,34 +12,50 @@
             margin: 0;
             padding: 0;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+        header {
+            background-color: #4a90e2;
+            padding: 10px 0;
+            color: #fff;
             text-align: center;
         }
-        header {
-            padding: 10px 0;
-            border-bottom: 2px solid #e2e2e2;
+        header h1 {
+            margin: 0;
         }
-        h1 {
-            color: #4a90e2;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #357abd;
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4a90e2;
+        nav a {
+            padding: 15px 20px;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            font-weight: bold;
         }
-        a.button:hover {
-            background-color: #357abd;
+        nav a:hover {
+            background-color: #2a5a89;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #e9f0f8;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #4a90e2;
+        }
+        .contact-info a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            color: #2a5a89;
         }
     </style>
 </head>
@@ -47,11 +63,36 @@
     <header>
         <h1>Welcome to My GitHub Page</h1>
     </header>
+    <nav>
+        <a href="#repositories">Repositories</a>
+        <a href="#contact">Contact Info</a>
+        <a href="#about">About Me</a>
+    </nav>
+
     <div class="container">
-        <p>Hi! I'm an experienced developer specializing in web development, data analysis, and software engineering. Here, you’ll find a collection of my projects and contributions.</p>
-        <p>Feel free to explore my repositories and get in touch if you’d like to collaborate on something exciting!</p>
-        <a href="https://github.com/username" class="button">Explore My Repos</a>
+        <!-- Repositories Section -->
+        <div id="repositories" class="section">
+            <h2>My Repositories</h2>
+            <p>Here’s a list of my GitHub repositories where I showcase my projects and contributions.</p>
+            <a href="https://github.com/username" class="button" target="_blank">Explore My Repos</a>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div id="contact" class="section">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out to me through LinkedIn or email:</p>
+            <p class="contact-info">
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br>
+                <strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a>
+            </p>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with expertise in web development, data analysis, and software engineering. I enjoy creating solutions that make a difference and love collaborating on open-source projects.</p>
+            <p>On this page, you’ll find links to my projects, contact information, and a bit about my journey in the tech world. Thanks for visiting!</p>
+        </div>
     </div>
 </body>
 </html>
-
